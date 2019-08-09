@@ -1,0 +1,16 @@
+// Callback function
+
+const { MongoClient } = require('mongodb');
+const url ='mongodb://localhost:27017';
+
+MongoClient.connect(url, {useNewUrlParser: true},(err,conn)=> {
+    if(err) throw err;
+    const db = conn.db('trainingdb');
+    const contacts = db.collection('contacts');
+    contacts.findOne((err,c1) => {
+        conn.close();
+        if (err) throw err;
+        console.log(c1);
+    })
+
+})

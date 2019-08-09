@@ -1,0 +1,12 @@
+</div>
+		</div>
+	
+		<div class="text-center">
+			&copy; 2019 &middot; All right reserved by
+			<a href="https://www.youtube.com">https://usualweb.com</a>
+		</div>
+	</div>
+	
+
+</body>
+</html>
